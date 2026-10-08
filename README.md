@@ -12,7 +12,7 @@ right-click (control-click) for timed options.
 2. Download the latest `Wakey-macOS.zip`.
 3. Unzip it and drag `Wakey.app` into your `Applications` folder (or
    `~/Applications`).
-4. Since the app is only ad-hoc signed (not notarized by Apple), the
+4. Since the app is only ad-hoc signed (not notarised by Apple), the
    first time you open it macOS Gatekeeper will refuse to launch it
    normally. Either:
    - Right-click `Wakey.app` → **Open** → **Open** in the confirmation
@@ -41,8 +41,7 @@ open "$HOME/Applications/Wakey.app"
 
 ## Updating
 
-Re-run `./build.sh && ./install.sh`, or download the latest release zip
-and repeat the install steps above.
+Re-run `./build.sh && ./install.sh`, or download the latest release zip and repeat the install steps above.
 
 ## Uninstalling
 
@@ -66,3 +65,8 @@ To cut a new release:
 git tag v1.0.0
 git push origin v1.0.0
 ```
+
+Or create a release in Github directly as the same action will run
+
+---
+Created by 🤓 with ❤️ for the 🍎 community.

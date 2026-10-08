@@ -2,8 +2,7 @@
 
 A tiny macOS menu-bar utility that keeps your Mac awake, in the spirit of
 the classic "Caffeine" app. Click the lightbulb to toggle it on/off, or
-right-click (control-click) for timed options. No Xcode project needed —
-it's just a couple of Swift files compiled with `swiftc`.
+right-click (control-click) for timed options. 
 
 ## Installing
 
@@ -20,7 +19,7 @@ it's just a couple of Swift files compiled with `swiftc`.
      dialog, or
    - Run `xattr -cr /Applications/Wakey.app` in Terminal to clear the
      quarantine flag, then open it as normal.
-5. Launch Wakey — a lightbulb icon will appear in your menu bar.
+5. Launch Wakey - a lightbulb icon will appear in your menu bar.
 
 ### Option 2: Build from source
 
@@ -51,7 +50,7 @@ and repeat the install steps above.
 rm -rf ~/Applications/Wakey.app
 ```
 
-## Continuous Integration & Releases
+## CI & Releases
 
 - Every push to `main` triggers the [Build workflow](.github/workflows/build.yml),
   which compiles Wakey.app on `macos-latest` and uploads it as a

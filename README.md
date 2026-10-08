@@ -1,5 +1,7 @@
 # Wakey
 
+[![Build](https://github.com/steveswinsburg/wakey/actions/workflows/build.yml/badge.svg)](https://github.com/steveswinsburg/wakey/actions/workflows/build.yml)
+
 A tiny macOS menu-bar utility that keeps your Mac awake, in the spirit of
 the classic "Caffeine" app. Click the lightbulb to toggle it on/off, or
 right-click (control-click) for timed options. 

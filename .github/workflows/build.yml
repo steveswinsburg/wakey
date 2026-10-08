@@ -1,0 +1,33 @@
+name: Build
+
+# Compiles Wakey.app on every push to main (and on PRs targeting main) to
+# make sure the Swift sources still build cleanly. Uploads the built .app
+# as a workflow artifact for easy manual testing/download.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Wakey.app
+        run: ./build.sh
+
+      - name: Zip app bundle
+        run: ditto -c -k --sequesterRsrc --keepParent build/Wakey.app Wakey-macOS.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Wakey-macOS
+          path: Wakey-macOS.zip
+          retention-days: 14

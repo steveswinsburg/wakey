@@ -1,0 +1,33 @@
+name: Release
+
+# Builds Wakey.app and publishes it as a downloadable binary on the GitHub
+# Release for the pushed tag, e.g.:
+#   git tag v1.0.0 && git push origin v1.0.0
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Wakey.app
+        run: ./build.sh
+
+      - name: Zip app bundle
+        run: ditto -c -k --sequesterRsrc --keepParent build/Wakey.app Wakey-macOS.zip
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Wakey-macOS.zip
+          generate_release_notes: true

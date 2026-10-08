@@ -3,11 +3,18 @@ name: Release
 # Builds Wakey.app and publishes it as a downloadable binary on the GitHub
 # Release for the pushed tag, e.g.:
 #   git tag v1.0.0 && git push origin v1.0.0
+#
+# Also fires when a release is published from the GitHub UI against an
+# already-existing tag (pushing a brand-new tag doesn't generate a
+# "release" event on its own, so both triggers are needed to cover every
+# way of cutting a release).
 
 on:
   push:
     tags:
       - "v*"
+  release:
+    types: [published]
 
 permissions:
   contents: write

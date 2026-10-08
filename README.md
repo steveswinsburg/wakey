@@ -6,14 +6,9 @@ A tiny macOS menu-bar utility that keeps your Mac awake, in the spirit of
 the classic "Caffeine" app. Click the lightbulb to toggle it on/off, or
 right-click (control-click) for timed options. 
 
-> **Note:** The screenshots below are illustrative mockups of the menu
-> bar icon and dropdown menu, not real screen captures.
-
-| Idle | Active |
-|---|---|
-| ![Wakey idle in the menu bar](screenshots/menu-icon-off.png) | ![Wakey active in the menu bar](screenshots/menu-icon-on.png) |
-
-![Wakey dropdown menu with timed options](screenshots/dropdown-menu.png)
+| Idle | Active | Options |
+|---|---|---|
+| ![Wakey idle in the menu bar](screenshots/menu-icon-off.png) | ![Wakey active in the menu bar](screenshots/menu-icon-on.png) | ![Wakey dropdown menu with timed options](screenshots/dropdown-menu.png) |
 
 ## Installing
 

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="wakey.png" alt="wakey" width="420">
+</p>
+
 # Wakey
 
 [![Build](https://github.com/steveswinsburg/wakey/actions/workflows/build.yml/badge.svg)](https://github.com/steveswinsburg/wakey/actions/workflows/build.yml)

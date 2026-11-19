@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="wakey.png" alt="wakey" width="420">
+  <img src="wakey.png" alt="wakey" width="720">
 </p>
 
 # Wakey
